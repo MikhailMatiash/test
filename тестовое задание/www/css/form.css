@@ -1,0 +1,75 @@
+/*border style*/
+.containerBorder {
+  padding: 0;
+  border: 1px solid silver;
+  border-radius: 5px;
+  background-color: #E0FFFF;
+}
+
+/* header style*/
+.header {
+  border: 1px solid silver;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #008080;
+  color: #fafafa;
+  text-align: center;
+  font-family: fantasy;
+}
+
+/*style for form padding*/
+.formPadding {
+  padding: 4% 4% 0 4%;
+}
+
+/*style for icon`s*/
+.bgIconForm {
+  background-color: #008080;
+  border: 1px solid silver;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 38px;
+  width: 38px;
+  line-height: 34px;
+  text-align: center;
+}
+
+/*style for input*/
+.formInput:hover {
+  border: 1px solid #7b7b7b;
+}
+
+.formInput:focus {
+  border: 1px solid #7b7b7b;
+}
+
+.formSelect:hover {
+  border: 1px solid #7b7b7b;
+}
+
+
+.blockCenter {
+  margin: 10% 0;
+}
+
+.buttonStyle {
+  background-color: #008080;
+  color: #fafafa;
+  width: 100px;
+  float:right;
+  margin-bottom: 5%;
+}
+
+.buttonStyle:hover {
+    background-color: #20B2AA;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+body {
+  background-color:#fafafa;
+}

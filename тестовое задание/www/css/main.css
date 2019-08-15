@@ -1,0 +1,91 @@
+#loadImg{
+  position:absolute;
+  z-index:1000;
+  display:none;
+}
+
+.block {
+  padding: 0;
+  background-color: #E0FFFF;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 300px;
+  margin: 10% 5% 0 5%;
+}
+
+.myChartBlock {
+  padding: 0;
+  background-color: #fafafa;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 5% 5% 5% 5%;
+}
+
+.header {
+  width: 100%;
+  padding: 0;
+
+  border: 1px solid silver;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #008080;
+  color: #fafafa;
+  text-align: center;
+  font-family: fantasy;
+}
+
+.loadImg {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.list-group {
+  max-height: 248px;
+  overflow: auto;
+}
+
+.totalCompanies {
+  padding-top: 15px;
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 50%;
+  font-size: 40px;
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 37%;
+}
+
+.company {
+  background-color: #E0FFFF;
+}
+
+.companyPartners {
+  top: 15%;
+  display: none;
+  position: absolute;
+  z-index: 2;
+}
+
+.close {
+  margin: 10px 10px;
+}
+
+.company:hover {
+  color: #fafafa;
+  background-color: #AFEEEE;
+  cursor: pointer;
+}
+
+canvas {
+  background-color: #AFEEEE;
+}
+
+body {
+  background-color:#fafafa;
+}

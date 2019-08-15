@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="../css/form.css" rel="stylesheet">
+  <script src= "https://code.jquery.com/jquery-3.4.1.min.js" integrity= "sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin= "anonymous" ></script>
+  <title>Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center blockCenter">
+      <div class="col-md-8 containerBorder">
+        <div class="header">
+          <h1>Sign Up</h1>
+        </div>
+        <form class="formPadding needs-validation" id="form" role="form" method="post" action="" onsubmit="return false;" novalidate>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon bgIconForm iconVerticalCenter">&#128100;</span>
+              <input type="text" class="form-control formInput" id="name" name="name" placeholder="Name" minlength="2" maxlength="10" pattern="[a-zA-Zа-яА-Я]+" required>
+              <div class= "invalid-feedback" > Please enter the correct name </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon bgIconForm iconVerticalCenter">&#x1F464;</span>
+              <input type="text" class="form-control formInput" id="secondname" name="secondname" placeholder="Secondname" minlength="2" maxlength="10" pattern="[a-zA-Zа-яА-Я]+" required>
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class= "invalid-feedback" > Please enter the correct secondname </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon bgIconForm iconVerticalCenter">&#9993;</span>
+              <input type="email" class="form-control formInput" id="email" name="email" placeholder="Email" required>
+              <div class= "invalid-feedback" > Please enter the correct email </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon bgIconForm iconVerticalCenter">&#128974;</span>
+              <input type="password" class="form-control formInput" id="password" name="pass" placeholder="Password" minlength="6" maxlength="20" pattern="[a-zA-Zа-яА-Я0-9]+" required>
+              <div class= "invalid-feedback" > Password must be longer then 5 symbol </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <select class="form-control formSelect" id="gender" name="gender" required>
+              <option selected value=''>Select your gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+            <div class= "invalid-feedback" >Please fill this field</div>
+          </div>
+          <div class="form-group">
+            <div class="checkbox form-check">
+              <input type="checkbox" class="form-check-input formInput" id="checkbox" required>
+              <div class="invalid-feedback">You must agree</div>
+              <label class="form-check-label" for="checkbox">Сonditions of Agreement</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="send" class="btn buttonStyle">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="../js/form.js"></script>
+</body>
+</html>
