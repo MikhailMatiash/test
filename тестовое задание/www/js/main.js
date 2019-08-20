@@ -12,7 +12,7 @@ $(function(){
     $('.addTotalCompanies').prepend('<div class="totalCompanies">' + totalCompanies + '</div>');
 
     //вытягиваем имена компаний и добавляем их в блок
-    for (let i = 0; i < totalCompanies; i++) {
+    for (var i = 0; i < totalCompanies; i++) {
       var company = companyData.list[i].name;
       $('.addList').append('<div class="list-group-item company">' + company + '</div>');
     }
@@ -21,10 +21,10 @@ $(function(){
     $('.list-group-item').on('click', function() {
       $("div.partners").remove()
       var companyName = this.innerHTML;
-      for (let i = 0; i < totalCompanies; i++) {
+      for (var i = 0; i < totalCompanies; i++) {
         if (companyName == companyData.list[i].name) {
           var totalPartners = Object.keys(companyData.list[i].partners).length ;
-          for(let j = 0; j < totalPartners; j++){
+          for(var j = 0; j < totalPartners; j++){
             var partnersName = (companyData.list[i].partners[j].name);
             var partnersValue = (companyData.list[i].partners[j].value);
             $('.addCompanyPartners').prepend('<div class="list-group-item partners">' + partnersName + ' has ' + partnersValue + ' percent act this company' + '</div>');
@@ -42,16 +42,16 @@ $(function(){
 
     //вытягиваем локации
     let arrLocations = [];
-    for (let i = 0; i < totalCompanies; i++) {
+    for (var i = 0; i < totalCompanies; i++) {
       var totalLocations = Object.keys(companyData.list[i].location).length ;
-      for(let j = 0; j < totalLocations; j++){
+      for(var j = 0; j < totalLocations; j++){
         arrLocations [i] = companyData.list[i].location.name;
      }
     }
     arrLocations.sort();
 
     let locName = [];
-    for (let i = 0; i < arrLocations.length; i++) {
+    for (var i = 0; i < arrLocations.length; i++) {
       if (arrLocations[i] !== arrLocations[i + 1]) {
         locName.push(arrLocations[i]);
       }
@@ -59,7 +59,7 @@ $(function(){
 
     //подсчет локаций
     let arrSum = [0, 0, 0, 0, 0, 0];
-    for (let i = 0; i < arrLocations.length; i ++) {
+    for (var i = 0; i < arrLocations.length; i ++) {
       if (locName[0] == arrLocations[i]) {
         arrSum[0] += 1;
       }else if(locName[1] == arrLocations[i]) {
