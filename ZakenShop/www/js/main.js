@@ -29,9 +29,6 @@ function goodsOut(data) {
         out +=`<button class="addToCart btn btn-primary" name="${data[key].name}" data-id="${key}">Купить</button>`;
         out +='</div>';
         out +='<div class="productButton">';
-        out +=`<button class="btn btn-primary editGoods" data-id="${key}">Редактировать</button>`;
-        out +='</div>';
-        out +='<div class="productButton">';
         out +=`<button class="btn btn-primary delGoods" data-id="${key}">Удалить</button>`;
         out +='</div>';
         out +='</div>';
