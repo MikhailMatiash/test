@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: -webkit-radial-gradient(top, ellipse, #33ff99, transparent), -webkit-radial-gradient(bottom, ellipse, #660099, transparent);
+  background: -o-radial-gradient(top, ellipse, #33ff99, transparent), -o-radial-gradient(bottom, ellipse, #660099, transparent);
+  background: radial-gradient(ellipse at top, #33ff99, transparent), radial-gradient(ellipse at bottom, #660099, transparent); }
+  body .header {
+    background-color: #ccffcc; }
+
+.loadImg {
+  position: absolute;
+  z-index: 1000;
+  display: none; }
+
+.rightNav {
+  position: fixed;
+  right: 0;
+  width: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 3% 2%; }
+  .rightNav a i {
+    color: black; }
+
+.miniCartDiv {
+  text-align: center;
+  position: fixed;
+  left: 0;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 13%;
+  max-height: 60%;
+  overflow: auto;
+  margin: 3% 1% 0 1%; }
+  .miniCartDiv span {
+    font-size: 20px; }
+  .miniCartDiv hr {
+    border-color: black; }
+
+.mainContent {
+  background: -webkit-radial-gradient(top, ellipse, #66ffff, transparent), -webkit-radial-gradient(bottom, ellipse, #3300ff, transparent);
+  background: -o-radial-gradient(top, ellipse, #66ffff, transparent), -o-radial-gradient(bottom, ellipse, #3300ff, transparent);
+  background: radial-gradient(ellipse at top, #66ffff, transparent), radial-gradient(ellipse at bottom, #3300ff, transparent);
+  min-height: calc(100vh - 80px);
+  width: 70%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 3%; }
+  .mainContent .addButton {
+    margin: 5% 0; }
+
+footer {
+  height: 80px; }
+  footer .footer-copyright {
+    color: #fafafa;
+    background-color: #11001a; }
+
+.productBlock {
+  background: -webkit-radial-gradient(top, ellipse, #00ffff, transparent), -webkit-radial-gradient(bottom, ellipse, #0000cc, transparent);
+  background: -o-radial-gradient(top, ellipse, #00ffff, transparent), -o-radial-gradient(bottom, ellipse, #0000cc, transparent);
+  background: radial-gradient(ellipse at top, #00ffff, transparent), radial-gradient(ellipse at bottom, #0000cc, transparent);
+  margin-top: 5%;
+  width: 80%;
+  height: 260px;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: auto; }
+  .productBlock .productImg {
+    text-align: center;
+    background-color: white;
+    margin: 2%;
+    float: left;
+    min-width: 30%;
+    min-height: 80%;
+    border: 1px solid black;
+    border-radius: 5px; }
+    .productBlock .productImg img {
+      margin-top: 10%; }
+  .productBlock .productDescription {
+    font-family: fantasy;
+    padding: 5px;
+    background-color: white;
+    margin: 2%;
+    width: 62%;
+    min-height: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+    float: right; }
+    @media (max-width: 1300px) {
+      .productBlock .productDescription {
+        width: 96%; } }
+  .productBlock .productButton {
+    float: right;
+    margin: 2% 5% 2% 2%; }
+
+.addProductBlock {
+  background: -webkit-radial-gradient(top, ellipse, #00ffff, transparent), -webkit-radial-gradient(bottom, ellipse, #0000cc, transparent);
+  background: -o-radial-gradient(top, ellipse, #00ffff, transparent), -o-radial-gradient(bottom, ellipse, #0000cc, transparent);
+  background: radial-gradient(ellipse at top, #00ffff, transparent), radial-gradient(ellipse at bottom, #0000cc, transparent);
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 3%;
+  width: 80%;
+  display: none;
+  z-index: 2; }
+  .addProductBlock form .form-group {
+    margin-top: 3%;
+    width: 80%; }
+  .addProductBlock .create {
+    float: right;
+    margin: 3% 12% 3% 0; }

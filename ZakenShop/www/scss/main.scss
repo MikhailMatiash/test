@@ -1,0 +1,128 @@
+@import "variables";
+@import "mixin";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: radial-gradient(ellipse at top, #33ff99, transparent), radial-gradient(ellipse at bottom, #660099, transparent);
+  .header{
+    background-color: $headerColor;
+  }
+}
+
+.loadImg{
+  position:absolute;
+  z-index:1000;
+  display:none;
+}
+
+.rightNav{
+  position: fixed;
+  right: 0;
+  width: auto;
+  @include border;
+  margin: 3% 2%;
+  a{
+    i{
+      color:black;
+    }
+  }
+}
+
+.miniCartDiv{
+  text-align: center;
+  position: fixed;
+  left: 0;
+  @include border;
+  width: 13%;
+  max-height: 60%;
+  overflow: auto;
+  margin: 3% 1% 0 1%;
+  span{
+    font-size: 20px;
+  }
+  hr{
+    border-color: $borderColor;
+  }
+}
+
+.mainContent{
+  background:radial-gradient(ellipse at top, #66ffff, transparent), radial-gradient(ellipse at bottom, #3300ff, transparent);
+  min-height: calc(100vh - 80px);
+  width: 70%;
+  height: auto;
+  @include border;
+  margin-top: 3%;
+  .addButton{
+    margin:5% 0;
+  }
+}
+
+
+footer{
+  height: 80px;
+  .footer-copyright {
+    color: $mainContentColor;
+    background-color: darken($footerColor, 25%);
+  }
+}
+
+.productBlock{
+  background:radial-gradient(ellipse at top, #00ffff, transparent), radial-gradient(ellipse at bottom, #0000cc, transparent);
+  margin-top: 5%;
+  width: 80%;
+  height: 260px;
+  @include border;
+  overflow: auto;
+  .productImg{
+    text-align: center;
+    background-color: $imgAndTextBgColor;
+    margin: 2%;
+    float: left;
+    min-width: 30%;
+    min-height: 80%;
+    @include border;
+    img{
+      margin-top: 10%;
+    }
+  }
+  .productDescription{
+    font-family: fantasy;
+    padding: 5px;
+    background-color: $imgAndTextBgColor;
+    margin: 2%;
+    width: 62%;
+    min-height: 80%;
+    @include border;
+    float: right;
+    @media (max-width: 1300px){
+      width: 96%;
+    }
+  }
+  .productButton{
+    float: right;
+    margin: 2% 5% 2% 2%;
+  }
+}
+
+.addProductBlock {
+  background:radial-gradient(ellipse at top, #00ffff, transparent), radial-gradient(ellipse at bottom, #0000cc, transparent);
+  @include border;
+  margin-bottom: 3%;
+  width: 80%;
+  display: none;
+  z-index: 2;
+  form{
+    .form-group{
+      margin-top: 3%;
+      width: 80%;
+    }
+  }
+  .create{
+    float: right;
+    margin: 3% 12% 3% 0;
+  }
+}
